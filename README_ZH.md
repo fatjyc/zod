@@ -297,6 +297,7 @@ _要在这里看到你的名字 + Twitter + 網站 , 请在[Freelancer](https://
 - [`zod-i18n-map`](https://github.com/aiji42/zod-i18n): 有助于翻译 zod 错误信息。
 - [`mobx-zod-form`](https://github.com/MonoidDev/mobx-zod-form): 以数据为中心的表格构建工具，基于 MobX 和 Zod。
 - [`zodock`](https://github.com/ItMaga/zodock): 基於 Zod 模式生成模擬數據。
+- [`GQLoom`](https://github.com/modevol-com/gqloom): 使用 ZOD 编织 GraphQL Schema 和解析器。
 
 # 安装
 
@@ -316,27 +317,14 @@ _要在这里看到你的名字 + Twitter + 網站 , 请在[Freelancer](https://
 }
 ```
 
-### 从`npm`(Node/Bun)安装
+### 从`npm` 安装
 
 ```sh
 npm install zod
+deno add npm:zod      # deno
 yarn add zod          # yarn
 bun add zod           # bun
 pnpm add zod          # pnpm
-```
-
-### 从`deno.land/x` (Deno)安装
-
-和 Node 不同，Deno 依靠一个直接的 URL 导入而非像 npm 这样的包管理器。可以这样导入最新版本的 Zod:
-
-```ts
-import { z } from "https://deno.land/x/zod/mod.ts";
-```
-
-你也可以指定一个具体的版本：
-
-```ts
-import { z } from "https://deno.land/x/zod@v3.16.1/mod.ts";
 ```
 
 > README 的剩余部分假定你是直接通过 npm 安装的`zod`包。
